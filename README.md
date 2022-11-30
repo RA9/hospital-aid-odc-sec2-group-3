@@ -23,3 +23,5 @@ A platform that provides users' information to access emergency information.
 
 ### Meet The Team
 Alfred Ngwayah [@Big-Logic](https://www.github.com/Big-Logic)
+
+- Andrew Livingstone, Jr. [@Big-Logic](https://www.github.com/Big-Logic)
