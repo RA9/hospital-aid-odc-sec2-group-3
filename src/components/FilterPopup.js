@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./FilterPopup.css";
 
 export default function(props) {
