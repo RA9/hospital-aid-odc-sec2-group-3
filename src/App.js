@@ -1,16 +1,15 @@
+import { useState } from "react";
 import "./App.css";
 import Cards from "./components/Cards";
+import FilterPopup from "./components/FilterPopup";
+import NavBar from "./components/NavBar";
+import FilterButton from "./components/FilterButton";
 
 function App() {
+  const [displayPopup, setDisplayPopup] = useState(false);
   return (
     <>
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-md">
-          <a class="navbar-brand" href="#">
-            Hospital Aid
-          </a>
-        </div>
-      </nav>
+      <NavBar />
       <div className="container-fluid">
         <div className="container-lg row mx-auto mt-4">
           <div className="col-7">
@@ -32,9 +31,7 @@ function App() {
           <div className="col-5">
             <div className="container-fluid row">
               <div className="col-6">
-                <button type="button" class="btn btn-outline-secondary btn-lg">
-                  Filter
-                </button>
+                <FilterButton setDisplayPopup={setDisplayPopup} />
               </div>
               <div className="col-6">
                 <button type="button" class="btn btn-outline-secondary btn-lg">
@@ -47,6 +44,7 @@ function App() {
       </div>
 
       <Cards />
+      {displayPopup && <FilterPopup setDisplayPopup={setDisplayPopup}/>}
     </>
   );
 }

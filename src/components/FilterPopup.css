@@ -1,0 +1,21 @@
+.filter-popup {
+    /* position:  fixed;
+    top: 0;
+    left: 0; */
+    height: 100vh;
+    background-color: rgba(67, 66, 66, 0.5);
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-popup-child {
+   width: 600px;
+   background-color: #fff;
+}
+
+.filter-closebtn {
+    position: absolute;
+    right: 4%;
+    top: 4%;
+}
