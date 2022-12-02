@@ -1,4 +1,5 @@
 import "./App.css";
+import FilterPopup from "./components/FilterPopup";
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
           </div>
         </div>
       </div>
+      <FilterPopup />
     </>
   );
 }
