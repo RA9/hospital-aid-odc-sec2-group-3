@@ -42,7 +42,7 @@ function App() {
             </div>
           </div>
           <div className="container-fluid row mt-5">
-            {hospitalsData.map(data=> {return (<Cards />)})}
+            {hospitalsData.map(data => {return (<Cards />)})}
           </div>
         </div>
       </div>
