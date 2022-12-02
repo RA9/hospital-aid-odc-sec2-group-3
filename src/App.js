@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Cards from "./components/Cards";
 import FilterPopup from "./components/FilterPopup";
 import NavBar from "./components/NavBar";
 import FilterButton from "./components/FilterButton";
@@ -41,6 +42,8 @@ function App() {
           </div>
         </div>
       </div>
+
+      <Cards />
       {displayPopup && <FilterPopup setDisplayPopup={setDisplayPopup}/>}
     </>
   );
