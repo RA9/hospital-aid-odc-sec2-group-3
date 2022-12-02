@@ -1,15 +1,10 @@
 import "./App.css";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <>
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-md">
-          <a class="navbar-brand" href="#">
-            Hospital Aid
-          </a>
-        </div>
-      </nav>
+    <NavBar />
       <div className="container-fluid">
         <div className="container-lg row mx-auto mt-4">
           <div className="col-7">
