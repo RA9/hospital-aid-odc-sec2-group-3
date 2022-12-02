@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar";
 import FilterButton from "./components/FilterButton";
 
 function App() {
+  const hospitalsData = ['', '', '', '', '', '', '', '', '', '', '', '', '', '']
   const [displayPopup, setDisplayPopup] = useState(false);
   return (
     <>
@@ -40,11 +41,13 @@ function App() {
               </div>
             </div>
           </div>
+          <div className="container-fluid row mt-5">
+            {hospitalsData.map(data=> {return (<Cards />)})}
+          </div>
         </div>
       </div>
 
-      <Cards />
-      {displayPopup && <FilterPopup setDisplayPopup={setDisplayPopup}/>}
+      {displayPopup && <FilterPopup setDisplayPopup={setDisplayPopup} />}
     </>
   );
 }
