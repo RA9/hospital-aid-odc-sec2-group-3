@@ -1,11 +1,14 @@
+import { useState } from "react";
 import "./App.css";
 import FilterPopup from "./components/FilterPopup";
 import NavBar from "./components/NavBar";
+import FilterButton from "./components/FilterButton";
 
 function App() {
+  const [displayPopup, setDisplayPopup] = useState(false);
   return (
     <>
-    <NavBar />
+      <NavBar />
       <div className="container-fluid">
         <div className="container-lg row mx-auto mt-4">
           <div className="col-7">
@@ -27,9 +30,7 @@ function App() {
           <div className="col-5">
             <div className="container-fluid row">
               <div className="col-6">
-                <button type="button" class="btn btn-outline-secondary btn-lg">
-                  Filter
-                </button>
+                <FilterButton setDisplayPopup={setDisplayPopup} />
               </div>
               <div className="col-6">
                 <button type="button" class="btn btn-outline-secondary btn-lg">
@@ -40,7 +41,7 @@ function App() {
           </div>
         </div>
       </div>
-      <FilterPopup />
+      {displayPopup && <FilterPopup />}
     </>
   );
 }
