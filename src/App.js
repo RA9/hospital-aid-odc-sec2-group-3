@@ -1,4 +1,5 @@
 import "./App.css";
+import FilterPopup from "./components/FilterPopup";
 import NavBar from "./components/NavBar";
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
           </div>
         </div>
       </div>
+      <FilterPopup />
     </>
   );
 }
