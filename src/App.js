@@ -41,7 +41,7 @@ function App() {
           </div>
         </div>
       </div>
-      {displayPopup && <FilterPopup />}
+      {displayPopup && <FilterPopup setDisplayPopup={setDisplayPopup}/>}
     </>
   );
 }
