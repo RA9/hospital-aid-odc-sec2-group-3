@@ -6,14 +6,20 @@ export default function Footer(){
     return(
         <React.Fragment>
             <footer id="footer">
-                <div className="footer-box">
-                <h2>Location</h2>
+            <div className="footer-box">
+                <h3>Opening Hours</h3>
+                </div>
+            <div className="footer-box">
+                <h3>Company Name</h3>
                 </div>
                 <div className="footer-box">
-                 <h2>Menu</h2>
+                <h3>Location</h3>
                 </div>
                 <div className="footer-box">
-                    <h2>Contact</h2>
+                 <h3>Menu</h3>
+                </div>
+                <div className="footer-box">
+                    <h3>Contact</h3>
                 </div>
             </footer>
         </React.Fragment>
