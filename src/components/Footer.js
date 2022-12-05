@@ -7,13 +7,13 @@ export default function Footer(){
         <React.Fragment>
             <footer id="footer">
                 <div className="footer-box">
-                About
+                <h2>Location</h2>
                 </div>
                 <div className="footer-box">
-                 Contact
+                 <h2>Menu</h2>
                 </div>
                 <div className="footer-box">
-                    Services
+                    <h2>Contact</h2>
                 </div>
             </footer>
         </React.Fragment>
