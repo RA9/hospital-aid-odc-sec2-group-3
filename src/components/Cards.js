@@ -1,8 +1,11 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClock } from '@fortawesome/free-solid-svg-icons';
+
 
 export default function Cards({ hospitalData }) {
   return (
-      <div class="my-3 col-4">
+      <div class="my-3 col-md-4 text-md-center">
           <div class="card">
             <div class="card-body">
               <img
@@ -10,6 +13,7 @@ export default function Cards({ hospitalData }) {
                 class="img-fluid"
                 alt="..."
               />
+          
               <h5 class="card-title">{hospitalData["hospital-name"]}</h5>
               <p class="card-title">Location</p>
               <p class="card-text">{hospitalData["location"]}</p>
