@@ -1,11 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { fa } from '@fortawesome/free-solid-svg-icons';
+import { faClock } from '@fortawesome/free-solid-svg-icons';
 
 
 export default function Cards() {
   return (
-      <div class="my-3 col-4">
+      <div class="my-3 col-md-4">
           <div class="card">
             <div class="card-body">
               <img
@@ -15,7 +15,7 @@ export default function Cards() {
               />
               <h5 class="card-title">J.F.K MEDICAL HOSPITAL</h5>
               <h6 class="card-title">OPENING HOURS</h6>
-              <p class="card-text">7:00 AM - 12 AM</p>
+              <p class="card-text"><FontAwesomeIcon icon={faClock} />&nbsp;7:00 AM - 12 AM</p>
               <h6 class="card-title">EMERGENCY STATUS</h6>
               <p class="card-text">AVAILABLE</p>
               <a href="#" class="btn btn-warning">

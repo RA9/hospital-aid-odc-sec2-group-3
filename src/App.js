@@ -23,7 +23,7 @@ function App() {
                 />
                 
                
-                <button class="btn btn-primary" type="submit">
+                <button class="btn btn-primary mt-1 mb-2" type="submit">
                   Search
                 </button>
                 </form>
