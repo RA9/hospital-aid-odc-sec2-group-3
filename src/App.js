@@ -66,7 +66,6 @@ function App() {
                 </button>
               </div>
           <div className="container-fluid row mt-5">
-            {hospitalsData.map(data => {return (<Cards />)})}
             {hospitalsData.map((data) => {
               return <Cards hospitalData={data} />;
             })}
