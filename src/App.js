@@ -5,7 +5,6 @@ import FilterPopup from "./components/FilterPopup";
 import NavBar from "./components/NavBar";
 import FilterButton from "./components/FilterButton";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import { faSearch, faSave } from '@fortawesome/free-solid-svg-icons';
 
 import Footer from "./components/Footer";
