@@ -22,7 +22,7 @@ code {
   font-size: 10px;
   position: absolute;
   padding: 50px;
-  height: 40%;
+  height: 50%;
 }
 .footer-box{
   width: 50%;
@@ -33,6 +33,13 @@ code {
   margin-bottom: 150px;
 }
 
-/* .footer-box>h3{
-  margin-bottom: 50px;
-} */
+.footer-text{
+  font-size: .6rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  align-items: center;
+}
+
+#copyright{
+  margin-top: 100px;
+}
