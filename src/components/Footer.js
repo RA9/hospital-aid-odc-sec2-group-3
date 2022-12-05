@@ -5,9 +5,17 @@ import React from "react";
 export default function Footer(){
     return(
         <React.Fragment>
-            <div className="container">
+            <footer id="footer">
+                <div className="footer-box">
 
-            </div>
+                </div>
+                <div className="footer-box">
+
+                </div>
+                <div className="footer-box">
+
+                </div>
+            </footer>
         </React.Fragment>
     )
 }
