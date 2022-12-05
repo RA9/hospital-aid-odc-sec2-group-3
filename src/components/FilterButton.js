@@ -5,7 +5,7 @@ export default function (props) {
         props.setDisplayPopup(true);
     }
     return (
-      <button type="button" class="btn btn-outline-secondary btn-lg" onClick={displayPopupAction}>
+      <button type="button" class="btn-outline-secondary" onClick={displayPopupAction}>
         Filter
       </button>
     );

@@ -1,8 +1,10 @@
 import React from "react";
+//import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Cards() {
   return (
-      <div class="my-3 col-4">
+
+      <div class="container col-md-4">
           <div class="card">
             <div class="card-body">
               <img
@@ -10,12 +12,12 @@ export default function Cards() {
                 class="img-fluid"
                 alt="..."
               />
-              <h5 class="card-title">J.F.K MEDICAL HOSPITAL</h5>
+              <h5 class="card-title text-center">J.F.K MEDICAL HOSPITAL</h5>
               <h6 class="card-title">OPENING HOURS</h6>
               <p class="card-text">7:00 AM - 12 AM</p>
               <h6 class="card-title">EMERGENCY STATUS</h6>
               <p class="card-text">AVAILABLE</p>
-              <a href="#" class="btn btn-warning">
+              <a href="/hospitalcontent" class="btn btn-warning">
                 Read More
               </a>
             </div>

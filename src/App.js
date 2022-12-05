@@ -1,9 +1,13 @@
 import { useState } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 import Cards from "./components/Cards";
 import FilterPopup from "./components/FilterPopup";
 import NavBar from "./components/NavBar";
 import FilterButton from "./components/FilterButton";
+import ContentNav from "./components/ContentNav";
+
+
 
 function App() {
   const hospitalsData = ['', '', '', '', '', '', '', '', '', '', '', '', '', '']
