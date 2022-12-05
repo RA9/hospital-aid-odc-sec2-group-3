@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import Cards from "./components/Cards";
 import FilterPopup from "./components/FilterPopup";
@@ -6,10 +6,37 @@ import NavBar from "./components/NavBar";
 import FilterButton from "./components/FilterButton";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import Footer from "./components/Footer";
 
+import { collection, getDocs } from "firebase/firestore/lite";
+import { FirebaseDb } from "./db/firebase";
 
 function App() {
-  const hospitalsData = ['', '', '', '', '', '', '', '', '', '', '', '', '', '']
+  const [hospitalsData, setHospitalData] = useState([]);
+  async function getData() {
+    const hispitalCollection = collection(FirebaseDb, "hospitals");
+    try {
+      const querySnapshot = await getDocs(hispitalCollection);
+      setHospitalData(
+        querySnapshot.docs.map((doc) => {
+          return { ...doc.data(), id: doc.id };
+        })
+      );
+      console.log(
+        querySnapshot.docs.map((doc) => {
+          return { ...doc.data(), id: doc.id };
+        })
+      );
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
+  useEffect(() => {
+    return () => {
+      getData();
+    };
+  }, []);
   const [displayPopup, setDisplayPopup] = useState(false);
   return (
     <>
@@ -40,11 +67,14 @@ function App() {
               </div>
           <div className="container-fluid row mt-5">
             {hospitalsData.map(data => {return (<Cards />)})}
+            {hospitalsData.map((data) => {
+              return <Cards hospitalData={data} />;
+            })}
           </div>
       </div>
       {displayPopup && <FilterPopup setDisplayPopup={setDisplayPopup} />}
       </div>
-      
+      <Footer />
     </>
   );
 }
