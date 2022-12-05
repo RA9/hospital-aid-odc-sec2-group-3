@@ -10,10 +10,10 @@ export default function Footer(){
                 About
                 </div>
                 <div className="footer-box">
-                 <h1>Contact</h1>
+                 Contact
                 </div>
                 <div className="footer-box">
-                    <h1>Services</h1>
+                    Services
                 </div>
             </footer>
         </React.Fragment>
