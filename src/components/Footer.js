@@ -1,5 +1,9 @@
 import React from "react";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClock } from '@fortawesome/free-solid-svg-icons';
+
+
 
 
 export default function Footer(){
@@ -53,3 +57,4 @@ export default function Footer(){
         </React.Fragment>
     )
 }
+
