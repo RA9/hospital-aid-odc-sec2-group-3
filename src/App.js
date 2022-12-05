@@ -5,7 +5,7 @@ import FilterPopup from "./components/FilterPopup";
 import NavBar from "./components/NavBar";
 import FilterButton from "./components/FilterButton";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faSave } from '@fortawesome/free-solid-svg-icons';
 
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
               </div>
               <div className="col-md-2 col-6">
                 <button type="button" className="btn shadow form-control btn-block btn-outline-secondary btn-lg">
-                  Saved Items
+                  <FontAwesomeIcon icon={faSave} />&nbsp;Saved Items
                 </button>
               </div>
           <div className="container-fluid row mt-5">
