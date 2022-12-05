@@ -6,7 +6,7 @@ export default function SignUpButton() {
     return (
         <>
           <div className=''>
-            <button className='btn rounded-lg text-white bg-danger shadow-sm' onClick="#">
+            <button className='btn rounded-lg text-white text-end bg-danger shadow-sm' onClick="#">
             <FontAwesomeIcon icon={faUserAlt} /> Sign Up
             </button>
           </div>
