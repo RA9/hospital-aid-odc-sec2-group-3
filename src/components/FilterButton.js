@@ -8,7 +8,7 @@ export default function (props) {
         props.setDisplayPopup(true);
     }
     return (
-      <button type="button" class="btn shadow btn-outline-secondary btn-lg" onClick={displayPopupAction}>
+      <button type="button" class="btn form-control shadow btn-outline-secondary btn-lg" onClick={displayPopupAction}>
         <FontAwesomeIcon icon={faFilter} />&nbsp;Filter
       </button>
     );

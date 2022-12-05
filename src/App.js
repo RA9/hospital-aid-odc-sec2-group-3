@@ -4,6 +4,8 @@ import Cards from "./components/Cards";
 import FilterPopup from "./components/FilterPopup";
 import NavBar from "./components/NavBar";
 import FilterButton from "./components/FilterButton";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 
 function App() {
@@ -15,24 +17,24 @@ function App() {
       <div className="container">
         <div className="row mx-auto mt-4">
           <div className="col-md-8">
-            <form className="form-inline">
+            <form>
+          
                 <input
                   class="form-control rounded-lg form-control-lg"
                   type="text"
                   placeholder="Search"
                 />
-                
                
-                <button class="btn btn-primary mt-1 mb-2" type="submit">
-                  Search
+                <button class="btn btn-success mt-1 mb-3" type="submit">
+                  <FontAwesomeIcon icon={faSearch} />
                 </button>
                 </form>
                 </div>
-              <div className="col-md-2 col-6 text-center">
+              <div className="col-md-2 col-6">
                 <FilterButton setDisplayPopup={setDisplayPopup} />
               </div>
-              <div className="col-md-2 col-6 text-center">
-                <button type="button" className="btn shadow btn-outline-secondary btn-lg">
+              <div className="col-md-2 col-6">
+                <button type="button" className="btn shadow form-control btn-block btn-outline-secondary btn-lg">
                   Saved Items
                 </button>
               </div>

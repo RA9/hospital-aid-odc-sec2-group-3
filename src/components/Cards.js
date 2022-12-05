@@ -5,7 +5,7 @@ import { faClock } from '@fortawesome/free-solid-svg-icons';
 
 export default function Cards() {
   return (
-      <div class="my-3 col-md-4">
+      <div class="my-3 col-md-4 text-md-center">
           <div class="card">
             <div class="card-body">
               <img
