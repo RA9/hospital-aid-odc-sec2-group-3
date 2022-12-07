@@ -41,19 +41,14 @@ export default function Footer(){
                       <p>
                       Contact us at:<br></br>
                        Email: hospitalaid2022@gmail.com
-                       Tel: 231-776 -69-7736
+                       Tel: 231-776 -69-89736
                       </p>
 
                     </article>
                 </div>
-                <br></br>
-                <small id="copyright">
-                    <p>
-                    &copy;hospitalaid@2022 
-                    </p>
-                </small>
             </nav>
             </footer>
+           
         </React.Fragment>
     )
 }
