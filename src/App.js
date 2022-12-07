@@ -50,12 +50,12 @@ function App() {
                 <input
                   class="form-control rounded-lg form-control-lg"
                   type="text"
-                  placeholder="Search"
+                  placeholder="search...."
                 />
                
-                <button class="btn btn-success mt-1 mb-3" type="submit">
+                {/* <button class="btn btn-success mt-1 mb-3" type="submit">
                   <FontAwesomeIcon icon={faSearch} />
-                </button>
+                </button> */}
                 </form>
                 </div>
               <div className="col-md-2 col-6">
