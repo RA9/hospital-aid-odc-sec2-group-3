@@ -12,21 +12,3 @@ code {
     monospace;
 }
 
-#footer{
-  width: 100%;
-  display: flex;
-  margin-top: 100px;
-  text-align: center;
-  align-items: center;
-  background-color: #008000;
-  position: absolute;
-  padding: 50px;
-  height: 30%;
-}
-.footer-box{
-  width: 100px;
-  height: 20%;
-  color: white;
-  padding: 100px;
-  margin-bottom: 30px;
-}

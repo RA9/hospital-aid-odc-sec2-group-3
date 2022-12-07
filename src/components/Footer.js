@@ -9,17 +9,46 @@ import { faClock } from '@fortawesome/free-solid-svg-icons';
 export default function Footer(){
     return(
         <React.Fragment>
-            <footer id="footer">
-                <div className="footer-box">
-                About
+            <footer>
+            <nav id="footer-nav">
+            <div className="footer-box">
+                <h3>Opening Hours</h3>
+                <article className="footer-text">
+                       <p>
+                       Monday---8:00 Am -10:00 PM
+                        Tuesday---8:00 Am -10:00 PM
+                        Wednesday---8:00 Am -10:00 PM
+                        Thursday---8:00 Am -10:00 PM
+                        Friday---8:00 Am -10:00 PM
+                       </p>
+                    </article>
                 </div>
                 <div className="footer-box">
-                 Contact
+                <h3>Location</h3>
+                <article className="footer-text">
+                    <p>
+                    We are located in Sinkor, Oldest Conn town or visit at any of any bramches in Pynesville 
+                    and Brewerville.
+                    </p>
+                </article>
                 </div>
                 <div className="footer-box">
-                    Services
+                 <h3>Follow Us</h3>
                 </div>
+                <div className="footer-box">
+                    <h3>Contact</h3>
+                    <article className="footer-text">
+                      <p>
+                      Contact us at:<br></br>
+                       Email: hospitalaid2022@gmail.com
+                       Tel: 231-776 -69-89736
+                      </p>
+
+                    </article>
+                </div>
+            </nav>
             </footer>
+           
         </React.Fragment>
     )
 }
